@@ -1,0 +1,64 @@
+{
+  "chisel_use": {
+    "subtitle": "Chisel Used",
+    "sounds": [
+      "tutorialmod:chisel_use"
+    ]
+  },
+  "whip_use": {
+    "subtitle": "Whip Swung",
+    "sounds": [
+      "tutorialmod:whip_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "Magic Block Broken",
+    "sounds": [
+      "tutorialmod:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "Magic Block Steps",
+    "sounds": [
+      "tutorialmod:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "Magic Block Placed",
+    "sounds": [
+      "tutorialmod:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "Magic Block Breaking",
+    "sounds": [
+      "tutorialmod:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "Fall On Magic Block",
+    "sounds": [
+      "tutorialmod:magic_block_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "tutorialmod:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "mantis_death_sound": {
+    "subtitle": "Mantis Died",
+    "sounds": [
+      "tutorialmod:mantis_death_sound"
+    ]
+  },
+  "mantis_ambient_sound": {
+    "subtitle": "Mantis Talks",
+    "sounds": [
+      "tutorialmod:mantis_ambient_sound"
+    ]
+  }
+}
