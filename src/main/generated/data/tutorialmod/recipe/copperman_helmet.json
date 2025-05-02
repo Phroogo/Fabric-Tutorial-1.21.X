@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_block"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "C C",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:copperman_helmet"
+  }
+}

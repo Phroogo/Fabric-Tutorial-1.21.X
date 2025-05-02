@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "tutorialmod:cancerous_reactor"
+  },
+  "base": {
+    "item": "tutorialmod:copperman_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:activated_copperman_chestplate"
+  },
+  "template": []
+}

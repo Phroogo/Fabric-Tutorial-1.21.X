@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "pattern": [
+    " T ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:chisel"
+  }
+}

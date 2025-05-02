@@ -1,0 +1,8 @@
+{
+  "asset_id": "tutorialmod:cool",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.tutorialmod.cool"
+  },
+  "template_item": "tutorialmod:cool_smithing_template"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "tutorialmod:pink_garnet"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SRS",
+    "SRS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:pink_garnet_fence_gate"
+  }
+}

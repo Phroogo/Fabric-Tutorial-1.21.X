@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cancerous_reactor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:cancerous_reactor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:activated_copperman_boots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cancerous_reactor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:activated_copperman_boots"
+    ]
+  }
+}

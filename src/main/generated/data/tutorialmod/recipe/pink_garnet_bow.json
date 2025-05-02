@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "tutorialmod:pink_garnet"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " GS",
+    "G S",
+    " GS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:pink_garnet_bow"
+  }
+}
