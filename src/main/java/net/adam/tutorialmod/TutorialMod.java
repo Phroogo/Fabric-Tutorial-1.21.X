@@ -5,6 +5,7 @@ import net.adam.tutorialmod.component.ModDataComponentTypes;
 import net.adam.tutorialmod.effect.ModEffects;
 import net.adam.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.adam.tutorialmod.entity.ModEntities;
+import net.adam.tutorialmod.entity.custom.BlackEntity;
 import net.adam.tutorialmod.entity.custom.MantisEntity;
 import net.adam.tutorialmod.entity.custom.PhrogEntity;
 import net.adam.tutorialmod.item.ModItemGroups;
@@ -83,35 +84,35 @@ public class 	TutorialMod implements ModInitializer {
 				axes.add(Items.NETHERITE_AXE);
 				axes.add(ModItems.PINK_GARNET_AXE);
 
-					if (swords.contains(player.getMainHandStack().getItem())){
-						player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A SWORD!"));
-						player.getMainHandStack().setDamage(player.getMainHandStack().getDamage() + 99);
-						player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
-						sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 3, false, false));
-					}
-					else if (axes.contains(player.getMainHandStack().getItem())){
-						player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with AN AXE!"));
-						player.getMainHandStack().setDamage(player.getMainHandStack().getDamage() + 98);
-						player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
-						sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 4, false, false));
-					}
-					else if(player.getMainHandStack().getItem() == Items.END_ROD || player.getMainHandStack().getItem() == Items.STICK) {
-						player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A POINTY THINGY!"));
-						player.getMainHandStack().decrement(1);
-						player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
-						sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 2, false, false));
-					}
-					else if (player.getMainHandStack().isEmpty()) {
-						player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with THEIR BARE HANDS!"));
-						player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
-						sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false));
-					}
-					else {
-						player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A MYSTERIOUS ITEM!"));
-						player.getMainHandStack().decrement(1);
-						player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
-						sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false));
-					}
+				if (swords.contains(player.getMainHandStack().getItem())){
+					player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A SWORD!"));
+					player.getMainHandStack().setDamage(player.getMainHandStack().getDamage() + 99);
+					player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 3, false, false));
+				}
+				else if (axes.contains(player.getMainHandStack().getItem())){
+					player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with AN AXE!"));
+					player.getMainHandStack().setDamage(player.getMainHandStack().getDamage() + 98);
+					player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 4, false, false));
+				}
+				else if(player.getMainHandStack().getItem() == Items.END_ROD || player.getMainHandStack().getItem() == Items.STICK) {
+					player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A POINTY THINGY!"));
+					player.getMainHandStack().decrement(1);
+					player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 2, false, false));
+				}
+				else if (player.getMainHandStack().isEmpty()) {
+					player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with THEIR BARE HANDS!"));
+					player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0, false, false));
+				}
+				else {
+					player.sendMessage(Text.literal(player.getNameForScoreboard() + " just hit a sheep with A MYSTERIOUS ITEM!"));
+					player.getMainHandStack().decrement(1);
+					player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, 0, false, false));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1, false, false));
+				}
 
 				return ActionResult.PASS;
 			}
@@ -196,5 +197,7 @@ public class 	TutorialMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.PHROG, PhrogEntity.createAttributes());
+
+		FabricDefaultAttributeRegistry.register(ModEntities.BLACK, BlackEntity.createBlackAttributes());
 	}
 }

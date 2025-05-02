@@ -133,6 +133,8 @@ public class ModItems {
            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
    public static final Item PHROG_SPAWN_EGG = registerItem("phrog_spawn_egg",
            new SpawnEggItem(ModEntities.PHROG, 0x1b6ab2, 0x26ebfb, new Item.Settings()));
+    public static final Item BLACK_SPAWN_EGG = registerItem("black_spawn_egg",
+            new SpawnEggItem(ModEntities.BLACK, 0x000000, 0x000000, new Item.Settings()));
 
    public static final Item TOMAHAWK = registerItem("tomahawk",
            new TomahawkItem(new Item.Settings().maxCount(16)));

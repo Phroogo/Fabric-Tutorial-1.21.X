@@ -123,6 +123,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PHROG_SPAWN_EGG);
 
+                        entries.add(ModItems.BLACK_SPAWN_EGG);
+
                     }).build());
     public static void registerItemGroups() {
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);

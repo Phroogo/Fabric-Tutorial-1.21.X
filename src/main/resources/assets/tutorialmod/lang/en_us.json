@@ -55,6 +55,7 @@
 
   "item.tutorialmod.mantis_spawn_egg": "Mantis Spawn Egg",
   "item.tutorialmod.phrog_spawn_egg": "Phrog Spawn Egg",
+  "item.tutorialmod.black_spawn_egg": "Black Spawn Egg",
 
   "item.tutorialmod.tomahawk": "Tomahawk",
 
@@ -135,6 +136,7 @@
 
   "entity.tutorialmod.mantis": "Mantis",
   "entity.tutorialmod.phrog": "Phrog",
+  "entity.tutorialmod.black": "Black",
 
   "entity.tutorialmod.tomahawk": "Tomahawk"
 

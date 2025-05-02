@@ -29,10 +29,6 @@ public class WhipItem extends Item {
         super(settings);
     }
 
-    public static void WhipItem(){
-
-    }
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 

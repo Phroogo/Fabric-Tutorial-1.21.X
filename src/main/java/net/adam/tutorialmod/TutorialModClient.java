@@ -29,6 +29,9 @@ public class TutorialModClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(PhrogModel.PHROG, PhrogModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.PHROG, PhrogRenderer::new);
 
+        EntityModelLayerRegistry.registerModelLayer(BlackModel.BLACK, BlackModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.BLACK, BlackRenderer::new);
+
         EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
 

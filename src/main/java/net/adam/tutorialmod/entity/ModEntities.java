@@ -1,6 +1,7 @@
 package net.adam.tutorialmod.entity;
 
 import net.adam.tutorialmod.TutorialMod;
+import net.adam.tutorialmod.entity.custom.BlackEntity;
 import net.adam.tutorialmod.entity.custom.MantisEntity;
 import net.adam.tutorialmod.entity.custom.PhrogEntity;
 import net.adam.tutorialmod.entity.custom.TomahawkProjectileEntity;
@@ -20,6 +21,11 @@ public class ModEntities {
             Identifier.of(TutorialMod.MOD_ID, "phrog"),
             EntityType.Builder.create(PhrogEntity::new, SpawnGroup.CREATURE)
                     .dimensions(0.5f, 0.2f).build());
+
+    public static final EntityType<BlackEntity> BLACK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(TutorialMod.MOD_ID, "black"),
+            EntityType.Builder.create(BlackEntity::new, SpawnGroup.CREATURE)
+                    .dimensions(0.8f, 2.0f).build());
 
     public static final EntityType<TomahawkProjectileEntity> TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(TutorialMod.MOD_ID, "tomahawk"),
